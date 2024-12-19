@@ -173,6 +173,16 @@ class Migration_Specific_calendar_sync extends EA_Migration
                 'constraint' => '11',
                 'null' => true,
             ],
+            'buffer_before' => [
+                'type' => 'INT',
+                'constraint' => '11',
+                'null' => true,
+            ],
+            'buffer_after' => [
+                'type' => 'INT',
+                'constraint' => '11',
+                'null' => true,
+            ],
             'price' => [
                 'type' => 'DECIMAL',
                 'constraint' => '10,2',

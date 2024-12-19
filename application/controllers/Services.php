@@ -24,6 +24,8 @@ class Services extends EA_Controller
         'id',
         'name',
         'duration',
+        'buffer_before',
+        'buffer_after',
         'price',
         'currency',
         'description',

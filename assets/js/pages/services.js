@@ -19,6 +19,8 @@ App.Pages.Services = (function () {
     const $id = $('#id');
     const $name = $('#name');
     const $duration = $('#duration');
+    const $bufferBefore = $('#buffer-before');
+    const $bufferAfter = $('#buffer-after');
     const $price = $('#price');
     const $currency = $('#currency');
     const $serviceCategoryId = $('#service-category-id');
@@ -110,6 +112,8 @@ App.Pages.Services = (function () {
             $serviceCategoryId.val('');
             $availabilitiesType.val('flexible');
             $attendantsNumber.val('1');
+            $bufferBefore.val('0');
+            $bufferAfter.val('0');
         });
 
         /**
@@ -134,6 +138,8 @@ App.Pages.Services = (function () {
             const service = {
                 name: $name.val(),
                 duration: $duration.val(),
+                buffer_before: $bufferBefore.val(),
+                buffer_after: $bufferAfter.val(),
                 price: $price.val(),
                 currency: $currency.val(),
                 description: $description.val(),
@@ -291,6 +297,8 @@ App.Pages.Services = (function () {
         $id.val(service.id);
         $name.val(service.name);
         $duration.val(service.duration);
+        $bufferBefore.val(service.buffer_before);
+        $bufferAfter.val(service.buffer_after);
         $price.val(service.price);
         $currency.val(service.currency);
         $description.val(service.description);

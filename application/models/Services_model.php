@@ -38,6 +38,8 @@ class Services_model extends EA_Model
         'id' => 'id',
         'name' => 'name',
         'duration' => 'duration',
+        'bufferBefore' => 'buffer_before',
+        'bufferAfter' => 'buffer_after',
         'price' => 'price',
         'currency' => 'currency',
         'description' => 'description',
