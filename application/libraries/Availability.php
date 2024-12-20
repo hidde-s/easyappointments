@@ -558,6 +558,10 @@ class Availability
             $current_hour = $start_hour;
 
             $diff = $current_hour->diff($end_hour);
+            
+            // Add buffer to time
+            $buffer = new DateInterval('PT' . (int) $service['buffer_before'] . 'M');
+            $current_hour->add($buffer);
 
             while ($diff->h * 60 + $diff->i >= (int) $service['duration'] && $diff->invert === 0) {
                 $available_hours[] = $current_hour->format('H:i');
