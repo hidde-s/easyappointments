@@ -38,7 +38,7 @@
              data-tippy-content="<?= lang('customer_information') ?>">
             <strong>3</strong>
         </div>
-        <div id="step-4" class="book-step" data-bs-toggle="tooltip"
+        <div id="step-4" class="book-step" data-bs-toggle="tooltip" style="background-color:#dbe8d7"
              data-tippy-content="<?= lang('appointment_confirmation') ?>">
             <strong>4</strong>
         </div>
